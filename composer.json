@@ -35,7 +35,7 @@
     },
     "config": {
         "platform": {
-            "php": ">=5.5"
+            "php": "5.5"
         },
         "optimize-autoloader": true,
         "preferred-install": "dist",
