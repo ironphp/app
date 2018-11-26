@@ -67,23 +67,10 @@
     "minimum-stability": "dev",
     "prefer-stable": false,
     "scripts": {
-        "auto-scripts": {
-            "cache:clear": "symfony-cmd",
-            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
-            "security-checker security:check": "script"
-        },
-        "post-install-cmd": [
-            "@auto-scripts"
-        ],
-        "post-update-cmd": [
-            "@auto-scripts"
-        ],
-        "post-install-cmd": "App\\Console\\Installer::postInstall",
-        "post-create-project-cmd": "App\\Console\\Installer::postInstall",
-        "post-autoload-dump": [
-            "Friday\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
-        ],
+        "post-install-cmd": "Friday\\Console\\Installer::postInstall",
+        "post-update-cmd": "Friday\\Console\\Installer::postUpdate",
+        "post-create-project-cmd": "Friday\\Console\\Installer::postInstall",
+        "post-autoload-dump": "Friday\\Console\\Installer::postAutoloadDump",
         "check": [
             "@test",
             "@cs-check"
