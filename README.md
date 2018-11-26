@@ -79,7 +79,7 @@ $ cd myapp
 Go to ironphp dir, if installed without dirname:
 
 ```bash
-$ cd ironphp
+$ cd app
 ```
 
 You can now use php developement webserver to view the default home page:
