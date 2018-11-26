@@ -1,16 +1,106 @@
 {
     "name": "ironphp/app",
-    "description": "IronPHP 1.0 application template",
+    "homepage": "https://github.com/ironphp/app",
+    "description": "The IronPHP Framework 1.0 skeleton application",
     "type": "project",
-    "require": {
-        "ironphp/ironphp": "1.0.0-alpha1"
-    },
+    "keywords": [
+        "php",
+        "framework",
+        "mvc",
+        "ironphp",
+        "frontcontroller",
+        "iron-php",
+        "ironphp-framework"
+        "app"
+        "ironphp-app"
+    ],
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/ironphp/app/issues",
+        "forum": "https://www.facebook.com/IronPHP-Framwork-325690624644002",
+        "source": "https://github.com/ironphp/app",
+        "email": "gaurangkumarp@gmail.com"
+    },
     "authors": [
         {
             "name": "GaurangKumar Parmar",
-            "email": "gaurangkumarp@gmail.com"
+            "email": "gaurangkumarp@gmail.com",
+            "homepage": "https://twitter.com/gaurangkumarp",
+            "role": "Creater and Developer"
         }
     ],
-    "minimum-stability": "dev"
+    "require": {
+        "php": "^5.5.0",
+        "ironphp/ironphp": "1.0.0-alpha1"
+    },
+    "config": {
+        "platform": {
+            "php": "5.5.0"
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0-dev"
+        },
+        "ironphp": {
+            "allow-contrib": true,
+            "dont-discover": [],
+            "require": "*"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+        ],
+        "files": ["src/Friday/Helper/Function.php"],
+        "exclude-from-classmap": ["/Tests/", "/test/", "/tests/"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "replace": {
+        "ironphp/ironphp": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false,
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
+            "security-checker security:check": "script"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ],
+        "post-install-cmd": "App\\Console\\Installer::postInstall",
+        "post-create-project-cmd": "App\\Console\\Installer::postInstall",
+        "post-autoload-dump": [
+            "Friday\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "check": [
+            "@test",
+            "@cs-check"
+        ],
+        "cs-check": "phpcs --colors -p --standard=vendor/cakephp/cakephp-codesniffer/CakePHP src/ tests/",
+        "cs-fix": "phpcbf --colors --standard=vendor/cakephp/cakephp-codesniffer/CakePHP src/ tests/",
+        "test": "phpunit --colors=always",
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
 }
+    "scripts": {
+    },
