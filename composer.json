@@ -72,6 +72,6 @@
         "post-create-project-cmd": "Friday\\Console\\Installer::postInstall",
         "post-autoload-dump": "Friday\\Console\\Installer::postAutoloadDump",
         "post-root-package-install": [
-        ],
+        ]
     }
 }
