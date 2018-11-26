@@ -71,18 +71,7 @@
         "post-update-cmd": "Friday\\Console\\Installer::postUpdate",
         "post-create-project-cmd": "Friday\\Console\\Installer::postInstall",
         "post-autoload-dump": "Friday\\Console\\Installer::postAutoloadDump",
-        "check": [
-            "@test",
-            "@cs-check"
-        ],
-        "cs-check": "phpcs --colors -p --standard=vendor/cakephp/cakephp-codesniffer/CakePHP src/ tests/",
-        "cs-fix": "phpcbf --colors --standard=vendor/cakephp/cakephp-codesniffer/CakePHP src/ tests/",
-        "test": "phpunit --colors=always",
         "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
-        ]
     }
 }
