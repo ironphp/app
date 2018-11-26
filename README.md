@@ -1,10 +1,13 @@
-<h1 align="center">IronPHP</h1>
+<h1 align="center">IronPHP Application Skeleton</h1>
 <p align="center">
     <a href="https://packagist.org/packages/ironphp/app" target="_blank">
         <img alt="Total Downloads" src="https://poser.pugx.org/ironphp/app/d/total.svg">
     </a>
     <a href="https://packagist.org/packages/ironphp/app" target="_blank">
         <img alt="Latest Stable Version" src="https://poser.pugx.org/ironphp/app/v/stable.svg">
+    </a>
+    <a href="https://packagist.org/packages/ironphp/app" target="_blank">
+        <img alt="Latest Dev Version" src="https://poser.pugx.org/ironphp/app/v/unstable.svg">
     </a>
     <a href='https://coveralls.io/github/ironphp/app?branch=master'>
         <img alt='Coverage Status' src='https://coveralls.io/repos/github/ironphp/app/badge.svg?branch=master'>
@@ -22,8 +25,10 @@
 
 ## About IronPHP
 
-The IronPHP Framework 1.0 skeleton application which
+The IronPHP Framework 1.0 skeleton to create application which
 uses Front Controller, and MVC.
+
+The Framework source code can be found here: [ironphp/ironphp](https://github.com/ironphp/ironphp).
 
 > **Note:** No stable release yet - [IronPHP Framework alpha1](https://github.com/ironphp/ironphp/releases/tag/1.0.0-alpha1) version has been released. 
 
