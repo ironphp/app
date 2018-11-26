@@ -10,8 +10,8 @@
         "ironphp",
         "frontcontroller",
         "iron-php",
-        "ironphp-framework"
-        "app"
+        "ironphp-framework",
+        "app",
         "ironphp-app"
     ],
     "license": "MIT",
