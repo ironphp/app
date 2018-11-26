@@ -1,0 +1,16 @@
+{
+    "name": "ironphp/app",
+    "description": "IronPHP 1.0 application template",
+    "type": "project",
+    "require": {
+        "ironphp/ironphp": "1.0.0-alpha1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GaurangKumar Parmar",
+            "email": "gaurangkumarp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
