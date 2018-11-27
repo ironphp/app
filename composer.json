@@ -41,10 +41,6 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.0-dev"
-        },
-        "ironphp": {
-            "allow-contrib": true,
-            "require": "*"
         }
     },
     "autoload": {
