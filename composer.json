@@ -31,7 +31,7 @@
     ],
     "require": {
         "php": ">=5.5",
-        "ironphp/ironphp": "dev-master"
+        "ironphp/ironphp": "1.0.0-alpha1"
     },
     "config": {
         "optimize-autoloader": true,
@@ -67,10 +67,10 @@
     "minimum-stability": "dev",
     "prefer-stable": false,
     "scripts": {
-        "post-install-cmd": "@php -r \"echo 'install';\"",
+        "post-root-package-install": "@php -r \"echo 'root-package-install';\"",
+        "post-autoload-dump": "@php -r \"echo 'autoload-dump';\"",
         "post-update-cmd": "@php -r \"echo 'update';\"",
         "post-create-project-cmd": "@php -r \"echo 'create-project';\"",
-        "post-autoload-dump": "@php -r \"echo 'autoload-dump';\"",
-        "post-root-package-install": "@php -r \"echo 'root-package-install';\""
+        "post-install-cmd": "@php -r \"echo 'install';\""
     }
 }
