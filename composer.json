@@ -67,10 +67,10 @@
     "minimum-stability": "dev",
     "prefer-stable": false,
     "scripts": {
-        "post-install-cmd": "@php -r ''",
-        "post-update-cmd": "@php -r ''",
-        "post-create-project-cmd": "@php -r ''",
-        "post-autoload-dump": "@php -r ''",
-        "post-root-package-install": "@php -r ''"
+        "post-install-cmd": "@php -r \"echo 'install';\"",
+        "post-update-cmd": "@php -r \"echo 'update';\"",
+        "post-create-project-cmd": "@php -r \"echo 'create-project';\"",
+        "post-autoload-dump": "@php -r \"echo 'autoload-dump';\"",
+        "post-root-package-install": "@php -r \"echo 'root-package-install';\""
     }
 }
