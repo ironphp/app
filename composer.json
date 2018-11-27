@@ -44,7 +44,6 @@
         },
         "ironphp": {
             "allow-contrib": true,
-            "dont-discover": [],
             "require": "*"
         }
     },
@@ -54,7 +53,6 @@
         },
         "classmap": [
         ],
-        "files": ["src/Friday/Helper/Function.php"],
         "exclude-from-classmap": ["/Tests/", "/test/", "/tests/"]
     },
     "autoload-dev": {
@@ -67,10 +65,10 @@
     "minimum-stability": "dev",
     "prefer-stable": false,
     "scripts": {
-        "post-root-package-install": "@php -r \"echo 'root-package-install';\"",
-        "post-autoload-dump": "@php -r \"echo 'autoload-dump';\"",
-        "post-update-cmd": "@php -r \"echo 'update';\"",
-        "post-create-project-cmd": "@php -r \"echo 'create-project';\"",
-        "post-install-cmd": "@php -r \"echo 'install';\""
+        "post-root-package-install": "@php -r \"echo 'root-package-install'.PHP_EOL;\"",
+        "post-autoload-dump": "@php -r \"echo 'autoload-dump'.PHP_EOL;\"",
+        "post-update-cmd": "@php -r \"echo 'update'.PHP_EOL;\"",
+        "post-create-project-cmd": "@php -r \"echo 'create-project'.PHP_EOL;\"",
+        "post-install-cmd": "@php -r \"echo 'install'.PHP_EOL;\""
     }
 }
