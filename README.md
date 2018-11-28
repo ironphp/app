@@ -103,6 +103,7 @@ Read and edit `'Configuraton'` in `config/app.php` and setup the `'Datasource'` 
 ## Community
 
 * Follow us on [GitHub][1]
+* Follow us on [FaceBook][2]
 
 ## About Us
 
@@ -133,3 +134,4 @@ For each report, we try to first confirm the vulnerability. Once confirmed, the 
 The IronPHP framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 [1]: https://github.com/ironphp
+[2]: https://www.facebook.com/IronPHP-Framwork-325690624644002
