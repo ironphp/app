@@ -51,10 +51,17 @@
     "minimum-stability": "dev",
     "prefer-stable": false,
     "scripts": {
-        "post-root-package-install": "@php -r \"echo 'post-root-package-install'.PHP_EOL;\"",
-        "post-autoload-dump": "@php -r \"echo 'post-autoload-dump'.PHP_EOL;\"",
-        "post-update-cmd": "@php -r \"echo 'post-update-cmd'.PHP_EOL;\"",
-        "post-create-project-cmd": "@php -r \"echo 'post-create-project-cmd'.PHP_EOL;\"",
-        "post-install-cmd": "@php -r \"echo 'post-install-cmd'.PHP_EOL;\""
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-autoload-dump": [
+        ],
+        "post-install-dump": [
+        ],
+        "post-update-dump": [
+        ],
+        "post-create-project-cmd": [
+            "@php jarvis key"
+        ]
     }
 }
