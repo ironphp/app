@@ -55,7 +55,7 @@ You can install IronPHP as your project using
 a starting point. you can run the following:
 
 1. Download [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist IronPHP/IronPHP [dir_name]`.
+2. Run `php composer.phar create-project --prefer-dist ironphp/app -s dev [dir_name]`.
 
 
 If Composer is installed globally, run
