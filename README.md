@@ -55,19 +55,19 @@ You can install IronPHP as your project using
 a starting point. you can run the following:
 
 1. Download [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist ironphp/app -s dev [dir_name]`.
+2. Run `php composer.phar create-project --prefer-dist ironphp/app [dir_name]`.
 
 
 If Composer is installed globally, run
 
 ``` bash
-$ composer create-project ironphp/app -s dev
+$ composer create-project ironphp/app
 ```
 
 In case you want to use a custom app dir name (e.g. `/myapp/`):
 
 ```bash
-$ composer create-project --prefer-dist ironphp/app -s dev myapp
+$ composer create-project --prefer-dist ironphp/app myapp
 ```
 
 Go to myapp dir, if installed with myapp dirname:
@@ -102,12 +102,12 @@ Read and edit `'Configuraton'` in `config/app.php` and setup the `'Datasource'` 
 
 ## Community
 
-* Follow us on [GitHub][1]
+* IronPHP on [GitHub][1]
 * Follow us on [FaceBook][2]
 
 ## About Us
 
-IronPHP development is led by the [Gaurang Parmar](https://twitter.com/gaurangkumarp).
+IronPHP development is led by the [GaurangKumar Parmar](https://twitter.com/gaurangkumarp).
 
 ## Get Support
 
@@ -127,11 +127,7 @@ For each report, we try to first confirm the vulnerability. Once confirmed, the 
 
 ## Authors
 
-- Gaurang Parmar  | [GitHub](https://github.com/gaurangkumar)  | [Twitter](https://twitter.com/gaurangkumarp) | [Patreon](https://www.patreon.com/gaurangkumar) | <gaurangkumarp@gmail.com>
-
-## License
-
-The IronPHP framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- GaurangKumar Parmar  | [GitHub](https://github.com/gaurangkumar)  | [Twitter](https://twitter.com/gaurangkumarp) | [Patreon](https://www.patreon.com/gaurangkumar) | <gaurangkumarp@gmail.com>
 
 [1]: https://github.com/ironphp
 [2]: https://www.facebook.com/IronPHP-Framwork-325690624644002
