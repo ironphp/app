@@ -14,7 +14,6 @@
         "app",
         "ironphp-app"
     ],
-    "license": "MIT",
     "support": {
         "issues": "https://github.com/ironphp/app/issues",
         "forum": "https://www.facebook.com/IronPHP-Framwork-325690624644002",
