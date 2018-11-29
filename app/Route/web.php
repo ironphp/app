@@ -33,7 +33,7 @@ Route::get('/member/{name}/{?id}', function ($name, $id = 1) {
 # Route with optional arguments - must pass default  argument
 Route::get('/user/{?name}/', function ($name = 'GK') {
     echo "Name: $name";
-    echo '<br>Num of Ars: '.func_num_args();
+    echo '<br>Num of Args: '.func_num_args();
     echo '<br>Args: ';print_r(func_get_args());
 });
 
