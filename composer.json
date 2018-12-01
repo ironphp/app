@@ -40,7 +40,10 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+			"config/paths.php"
+		]
     },
     "minimum-stability": "dev",
     "prefer-stable": false,
