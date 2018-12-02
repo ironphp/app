@@ -64,7 +64,7 @@ define('TMP', ROOT . DS . 'tmp' . DS);
 /**
  * Path to the logs directory.
  */
-define('LOGS', ROOT . DS . 'logs' . DS);
+define('LOGS', TMP . DS . 'logs' . DS);
 
 /**
  * Path to the cache files directory. It can be shared between hosts in a multi-server setup.
