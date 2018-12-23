@@ -16,6 +16,7 @@ require dirname(__DIR__) . '/config/requirements.php';
 // For built-in server
 if (PHP_SAPI === 'cli-server') {
 	$_SERVER['PHP_SELF'] = '/' . basename(__FILE__);
+    var_dump(parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH));exit;
 	$uri = urldecode(
     	'/'.ltrim(parse_url($_SERVER['REQUEST_URI'], '/'), PHP_URL_PATH)
 	);

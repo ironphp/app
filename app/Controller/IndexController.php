@@ -27,6 +27,8 @@ class IndexController extends Controller
      */
     public function index()
     {
+        //trigger_error('msg');
+        //throw new \Exception('msg');
         $this->template('index', ['name'=>'IronPHP', 'version'=>Application::VERSION]);
         #Examples
         //$data = $this->model('IndexModel')->get('name');
