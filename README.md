@@ -18,7 +18,7 @@ uses Front Controller, and MVC.
 
 The Framework source code can be found here: [ironphp/ironphp](https://github.com/ironphp/ironphp).
 
-> **Note:** No stable release yet - [IronPHP Framework alpha1](https://github.com/ironphp/ironphp/releases/tag/1.0.0-alpha1) version has been released. 
+> **Note:** No stable release yet - [IronPHP Framework 1.0.1 alpha1](https://github.com/ironphp/ironphp/releases/tag/1.0.1-alpha1) version has been released. 
 
 ## Table of Contents
 
