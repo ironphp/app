@@ -48,7 +48,7 @@ Route::get('/name/{name}', function ($name) {
 });
 
 # Route with view only (always GET method)
-//Route::view('/view', 'index', ['name' => 'IronPHP']);
+Route::view('/view', 'index', ['name' => 'IronPHP']);
 
 # Route with callable
 Route::get('/callable', function () {
