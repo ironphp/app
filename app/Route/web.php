@@ -16,8 +16,10 @@ use Friday\Http\Route;
  *
  */
 
-# Route with controller@method
-Route::get('/', 'IndexController@Index');
+# Route with controller@method. IndexController@Index is default
+Route::get('/');
+Route::get('/index2', 'IndexController');
+Route::get('/index3', 'IndexController@Index');
 
 # Available Router Methods
 //Route::get($uri, $callback);
