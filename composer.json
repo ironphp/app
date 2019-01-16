@@ -30,7 +30,7 @@
     ],
     "require": {
         "php": ">=5.5",
-        "ironphp/ironphp": "1.0.1-alpha2"
+        "ironphp/ironphp": "@dev"
     },
     "config": {
         "optimize-autoloader": true,
