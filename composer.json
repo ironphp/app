@@ -42,8 +42,8 @@
             "App\\": "app/"
         },
         "files": [
-			"config/paths.php"
-		]
+            "config/paths.php"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": false,
