@@ -1,5 +1,8 @@
+app/install
 /node_modules
 /vendor
 .env
+composer.lock
+desktop.ini
 npm-debug.log
 yarn-error.log
