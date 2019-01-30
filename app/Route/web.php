@@ -57,6 +57,11 @@ Route::get('/callable', function () {
     echo 'callable';
 });
 
+# Route with callable
+Route::post('/post', function () {
+    echo 'post';
+});
+
 # Route with rediect
 Route::get('foo', function () {
     echo 'Hello';
@@ -64,4 +69,5 @@ Route::get('foo', function () {
 });
 
 # Redirect Routes
-Route::redirect('/here', '/there', 301);
+Route::redirect('/here', '/there');
+//Route::redirect('/here', '/there', 301);
