@@ -18,7 +18,7 @@ uses Front Controller, and MVC.
 
 The Framework source code can be found here: [ironphp/ironphp](https://github.com/ironphp/ironphp).
 
-> **Note:** No stable release yet - [IronPHP Framework 1.0.1 alpha2](https://github.com/ironphp/ironphp/releases/tag/1.0.2-alpha1) version has been released. 
+> **Note:** No stable release yet - [IronPHP Framework 1.0.3 alpha1](https://github.com/ironphp/ironphp/releases/tag/1.0.3-alpha1) version has been released. 
 
 ## Table of Contents
 
@@ -74,6 +74,12 @@ You can now use php developement webserver to view the default home page:
 
 ```bash
 $ php jarvis serve
+```
+
+You can also use jarvis by shortcut for windows:
+
+```bash
+$ jarvis serve
 ```
 
 Then visit `http://localhost:8000` to see the welcome page.
