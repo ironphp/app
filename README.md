@@ -82,7 +82,7 @@ You can also use jarvis by shortcut for windows:
 $ jarvis serve
 ```
 
-Then visit (http://localhost:8000) to see the welcome page.
+Then visit [http://localhost:8000](http://localhost:8000) to see the welcome page.
 
 ## Update
 
