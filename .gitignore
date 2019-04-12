@@ -1,6 +1,8 @@
 app/install
 /node_modules
 /vendor
+/dist
+/build
 .env
 composer.lock
 package-lock.json
