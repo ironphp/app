@@ -30,7 +30,8 @@
     ],
     "require": {
         "php": ">=5.5",
-        "ironphp/ironphp": "@dev"
+        "ironphp/ironphp": "@dev",
+        "psr/log": "^1.1@dev"
     },
     "config": {
         "optimize-autoloader": true,
