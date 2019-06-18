@@ -107,7 +107,13 @@ Then visit [http://localhost:8000](http://localhost:8000) to see the welcome pag
 
 Since this is a starting point for your application and various files
 would have been modified as per your needs, there isn't a way to provide
-automated upgrades atleast for NOT FOR NOW, so you have to do any updates manually.
+automated upgrades atleast for NOT FOR NOW, so you have to update for this app-skeleton manually.
+
+You can update The Framework `ironphp/ironphp` easily:
+
+``` bash
+$ composer update ironphp/ironphp
+```
 
 ## Configuration
 
