@@ -42,9 +42,15 @@ You can install IronPHP as your project using
 [Composer](https://getcomposer.org)  as
 a starting point. you can run the following:
 
-1. Download [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist ironphp/app [dir_name]`.
+1. Download [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe) or download `composer.phar` file.
+2. Run `.
 
+
+If Composer is installed locally, run
+
+``` bash
+$ php composer.phar create-project ironphp/app
+```
 
 If Composer is installed globally, run
 
@@ -58,6 +64,12 @@ In case you want to use a custom app dir name (e.g. `/myapp/`):
 $ composer create-project --prefer-dist ironphp/app myapp
 ```
 
+You can directly clone this repo:
+
+```bash
+$ git clone https://github.com/ironphp/app.git myapp
+```
+
 Go to myapp dir, if installed with myapp dirname:
 
 ```bash
@@ -68,6 +80,13 @@ Go to ironphp dir, if installed without dirname:
 
 ```bash
 $ cd app
+```
+
+If you have cloned or downloaded this repo, then you have to manually create `.env` file and generate `APP_KEY`:
+
+```bash
+$ copy .env.example .env
+$ php jarvis key
 ```
 
 You can now use php developement webserver to view the default home page:
