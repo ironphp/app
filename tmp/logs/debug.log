@@ -1,4 +1,0 @@
-[2019-19-16 12:24:23] Type: Error; Message: Class 'Friday\Console\Command\Application' not found; File: D:\xampp\htdocs\app\vendor\ironphp\ironphp\src\Friday\Console\Command\ListCommand.php; Line: 74;
-
-[2019-19-16 12:55:12] Type: Error; Message: Class 'Friday\Console\Command\Application' not found; File: D:\xampp\htdocs\app\vendor\ironphp\ironphp\src\Friday\Console\Command\ServeCommand.php; Line: 100;
-
