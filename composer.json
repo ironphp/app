@@ -45,6 +45,7 @@
             "config/paths.php"
         ]
     },
+    "bin": ["jarvis"],
     "minimum-stability": "dev",
     "prefer-stable": false,
     "scripts": {
