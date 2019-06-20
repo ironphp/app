@@ -16,6 +16,19 @@ use Friday\Http\Route;
  *
  */
 
+# for CRUD operation use resource method,
+Route::resource('/', 'IndexController');
+/**
+ *
+ * /          GET     @index
+ * /create    GET     @create
+ * /{id}      GET     @show
+ * /{id}/edit GET     @edit
+ * /          POST    @store
+ * /{id}      PUT     @update
+ * /{id}      DELETE  @destroy
+ *
+ */
 # Route with controller@method. IndexController@Index is default
 Route::get('/');
 //Route::get('/index2', 'IndexController');
