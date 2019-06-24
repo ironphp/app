@@ -59,6 +59,6 @@ class IndexController extends Controller
      */
     public function showUsers()
     {
-        print_r($this->model->getUsers());
+        return $this->model->getUsers();
     }
 } 
