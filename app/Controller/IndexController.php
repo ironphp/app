@@ -1,6 +1,5 @@
 <?php
 /**
- * @package       IronPHP Application
  * @auther        GaurangKumar Parmar <gaurangkumarp@gmail.com>
  */
 
@@ -16,7 +15,7 @@ class IndexController extends Controller
      *
      * @return void
      */
-    function __construct()
+    public function __construct()
     {
     }
 
@@ -30,7 +29,7 @@ class IndexController extends Controller
         //trigger_error('msg');
         //throw new \Exception('msg');
         $this->template('index', ['name'=>'IronPHP', 'version'=>Application::VERSION]);
-        #Examples
+        //Examples
         //$data = $this->model('IndexModel')->get('name');
         //$data = $this->model('IndexModel')->get(null, ['id' => 1]);
         //$data = $this->model('IndexModel')->get(null, ['id' => 1, 'status' => 0]);
@@ -61,4 +60,4 @@ class IndexController extends Controller
     {
         return $this->model->getUsers();
     }
-} 
+}
