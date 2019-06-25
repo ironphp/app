@@ -1,12 +1,11 @@
 <?php
 /**
- * @package       IronPHP Application
  * @auther        GaurangKumar Parmar <gaurangkumarp@gmail.com>
  */
 
 return [
 
-    /**
+    /*
      *--------------------------------------------------------------------------
      * Default Database Connection Name
      *--------------------------------------------------------------------------
@@ -18,7 +17,7 @@ return [
 
     'default' => env('DB_CONNECTION', 'mysql'),
 
-    /**
+    /*
      *--------------------------------------------------------------------------
      * Database Connections
      *--------------------------------------------------------------------------
@@ -30,12 +29,12 @@ return [
     'connections' => [
 
         'mysql' => [
-            'host'     =>  env('DB_HOST', '127.0.0.1'),
-            'port'     =>  env('DB_PORT', '3306'),
-            'database' =>  env('DB_DATABASE', 'ironman'),
-            'username' =>  env('DB_USERNAME', 'ironman'),
-            'password' =>  env('DB_PASSWORD', 'secret'),
-            'prefix'   =>  env('DB_PREFIX', '')
+            'host'     => env('DB_HOST', '127.0.0.1'),
+            'port'     => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'ironman'),
+            'username' => env('DB_USERNAME', 'ironman'),
+            'password' => env('DB_PASSWORD', 'secret'),
+            'prefix'   => env('DB_PREFIX', ''),
         ],
 
     ],
