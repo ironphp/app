@@ -24,17 +24,9 @@ class IndexModel extends ModelService
     public function get($field = null, $id = null)
     {
         if ($id == null || (is_array($id) && count($id) == 0)) {
-            if ($field == null) {
-                return $this->table('user')->get();
-            } else {
-                return $this->table('user')->get('name');
-            }
+            return $this->table('user')->get($field);
         } else {
-            if ($field == null) {
-                return $this->table('user')->where($id)->get();
-            } else {
-                return $this->table('user')->where($id)->get('name');
-            }
+            return $this->table('user')->where($id)->get($field);
         }
     }
 
