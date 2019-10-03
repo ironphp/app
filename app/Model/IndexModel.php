@@ -1,6 +1,5 @@
 <?php
 /**
- * @package       IronPHP Application
  * @auther        GaurangKumar Parmar <gaurangkumarp@gmail.com>
  */
 
@@ -24,21 +23,10 @@ class IndexModel extends ModelService
      */
     public function get($field = null, $id = null)
     {
-        if($id == null || (is_array($id) && count($id) == 0)) {
-            if($field == null) {
-                return $this->table('user')->get();
-            }
-            else {
-                return $this->table('user')->get('name');
-            }
-        }
-        else {
-            if($field == null) {
-                return $this->table('user')->where($id)->get();
-            }
-            else {
-                return $this->table('user')->where($id)->get('name');
-            }
+        if ($id == null || (is_array($id) && count($id) == 0)) {
+            return $this->table('user')->get($field);
+        } else {
+            return $this->table('user')->where($id)->get($field);
         }
     }
 
@@ -49,7 +37,7 @@ class IndexModel extends ModelService
      */
     public function add()
     {
-        return $this->table('user')->add(['id'=>3, 'name'=>'pihu', 'user'=>'pihu', 'password'=>'123', 'status'=>1, ]);
+        return $this->table('user')->add(['id'=>3, 'name'=>'pihu', 'user'=>'pihu', 'password'=>'123', 'status'=>1]);
         //return $this->table('user')->add([3, 'pihu', 'pihu', '123', 1 ]);
         //return $this->table('user')->add([3, 'pihu', 'pihu', '123', 1]);
         //return $this->table('user')->add(3, 'pihu', 'pihu', '123', 1);

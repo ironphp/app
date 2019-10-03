@@ -6,6 +6,9 @@
     <a href="https://circleci.com/gh/ironphp/app" target="_blank">
         <img alt="CircleCI Build status" src="https://circleci.com/gh/ironphp/app.svg?style=svg">
     </a>
+    <a href="https://github.styleci.io/repos/159154661">
+        <img src="https://github.styleci.io/repos/159154661/shield?branch=master" alt="StyleCI">
+    </a>
     <a href="https://ci.appveyor.com/project/gaurangkumar/app" target="_blank">
         <img alt="AppVeyor Build status" src="https://ci.appveyor.com/api/projects/status/2dg847baixltt4p4?svg=true">
     </a>
@@ -24,7 +27,7 @@ uses Front Controller, and MVC.
 
 The Framework source code can be found here: [ironphp/ironphp](https://github.com/ironphp/ironphp).
 
-> **Note:** No stable release yet - [IronPHP Framework 1.0.5 alpha1](https://github.com/ironphp/ironphp/releases/tag/1.0.5-alpha1) version has been released.
+> **Note:** No stable release yet - [IronPHP Framework 1.0.5 alpha2](https://github.com/ironphp/ironphp/releases/tag/1.0.5-alpha2) version has been released.
 
 ## Table of Contents
 
