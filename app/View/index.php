@@ -1,9 +1,10 @@
 <?php
 /**
+ * @package       IronPHP Application
  * @auther        GaurangKumar Parmar <gaurangkumarp@gmail.com>
  */
-use Friday\Foundation\Application;
 
+use Friday\Foundation\Application;
 ?>
 <!DOCTYPE html>
 <html>
