@@ -33,7 +33,7 @@
         "ironphp/ironphp": "@dev"
     },
     "require-dev": {
-        "phpunit/phpunit": "8.4"
+        "phpunit/phpunit": "^7.5"
     },
     "config": {
         "optimize-autoloader": true,
