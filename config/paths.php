@@ -7,13 +7,6 @@
  * Path Constants.
  */
 
-/**
- * Use the DS to separate the directories in other defines.
- */
-if (!defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
-
 /*
  * These defines should only be edited if you have IronPHP installed in
  * a directory layout other than the way it is distributed.
@@ -23,23 +16,29 @@ if (!defined('DS')) {
 /*
  * The full path to the directory which holds "app", WITHOUT a trailing DS.
  */
-define('ROOT', dirname(__DIR__));
+//define('ROOT', dirname(__DIR__));
 
 /*
  * The actual directory name for the application directory. Normally
  * named 'app'.
  */
-define('APP_DIR', 'app');
+if (defined('ROOT')) {
+    define('APP_DIR', 'app');
+}
 
 /*
  * Path to the application's directory.
  */
-define('APP', ROOT.DS.APP_DIR.DS);
+if (defined('ROOT') && defined('APP_DIR')) {
+    define('APP', ROOT.DS.APP_DIR.DS);
+}
 
 /*
  * Path to the config directory.
  */
-define('CONFIG', ROOT.DS.'config'.DS);
+if (defined('ROOT')) {
+    define('CONFIG', ROOT.DS.'config'.DS);
+}
 
 /*
  * File path to the webroot directory.
@@ -48,27 +47,37 @@ define('CONFIG', ROOT.DS.'config'.DS);
  *
  * `define('WEB_ROOT', rtrim($_SERVER['DOCUMENT_ROOT'], DS) . DS);`
  */
-define('WEB_ROOT', ROOT.DS.'public'.DS);
+if (defined('ROOT')) {
+    define('WEB_ROOT', ROOT.DS.'public'.DS);
+}
 
 /*
  * Path to the tests directory.
  */
-define('TESTS', ROOT.DS.'tests'.DS);
+if (defined('ROOT')) {
+    define('TESTS', ROOT.DS.'tests'.DS);
+}
 
 /*
  * Path to the temporary files directory.
  */
-define('TMP', ROOT.DS.'tmp'.DS);
+if (defined('ROOT')) {
+    define('TMP', ROOT.DS.'tmp'.DS);
+}
 
 /*
  * Path to the logs directory.
  */
-define('LOGS', TMP.DS.'logs'.DS);
+if (defined('TMP')) {
+    define('LOGS', TMP.DS.'logs'.DS);
+}
 
 /*
  * Path to the cache files directory. It can be shared between hosts in a multi-server setup.
  */
-define('CACHE', TMP.'cache'.DS);
+if (defined('TMP')) {
+    define('CACHE', TMP.'cache'.DS);
+}
 
 /*
  * The absolute path to the "IronPHP" directory, WITHOUT a trailing DS.
@@ -79,10 +88,16 @@ define('CACHE', TMP.'cache'.DS);
  * if installed as project by composer create-project ironphp/ironphp
  * then define('IRON_CORE_INCLUDE_PATH', ROOT );
  */
-define('IRON_CORE_INCLUDE_PATH', ROOT);
+if (defined('ROOT')) {
+    define('IRON_CORE_INCLUDE_PATH', ROOT);
+}
 
 /*
  * Path to the cake directory.
  */
-define('CORE_PATH', IRON_CORE_INCLUDE_PATH.DS);
-define('IRON', CORE_PATH.'src'.DS);
+if (defined('IRON_CORE_INCLUDE_PATH')) {
+    define('CORE_PATH', IRON_CORE_INCLUDE_PATH.DS);
+}
+if (defined('CORE_PATH')) {
+    define('IRON', CORE_PATH.'src'.DS);
+}
