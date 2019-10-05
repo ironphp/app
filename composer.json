@@ -30,7 +30,7 @@
     ],
     "require": {
         "php": ">=5.5",
-        "ironphp/ironphp": "@dev",
+        "ironphp/ironphp": "@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "8.4"
