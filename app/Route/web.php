@@ -15,7 +15,7 @@ use Friday\Http\Route;
  */
 
 // for CRUD operation use resource method,
-Route::resource('/', 'IndexController');
+Route::resource('/resrc', 'IndexController');
 /*
  *
  * /          GET     @index
