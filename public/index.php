@@ -67,6 +67,7 @@ if (env('APP_DEBUG')) {
     echo 'DISPATCHER_INIT : '.round((DISPATCHER_INIT - ROUTE_MATCHED), 4).' seconds<br>';
     echo 'DISPATCHED      : '.round((DISPATCHED - DISPATCHER_INIT), 4).' seconds<br>';
     echo 'RESPONSE_SEND   : '.round((RESPONSE_SEND - DISPATCHED), 4).' seconds<br>';
+	echo '--------------------------------<br>';
     echo 'TOTAL           : '.round((IRONPHP_END - IRONPHP_START), 4).' seconds<br>';
     echo '</pre>';
 }
