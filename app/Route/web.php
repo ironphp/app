@@ -27,10 +27,14 @@ Route::resource('/resrc', 'IndexController');
  * /{id}      DELETE  @destroy
  *
  */
+
 // Route with controller@method. IndexController@Index is default
 Route::get('/');
 //Route::get('/index2', 'IndexController');
 //Route::get('/index3', 'IndexController@Index');
+
+// Named Route
+Route::get('/name')->name('home');;
 
 // Route with arguments
 Route::get('/name/{name}', function ($name) {
