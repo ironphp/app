@@ -34,7 +34,7 @@ Route::get('/');
 //Route::get('/index3', 'IndexController@Index');
 
 // Named Route
-Route::get('/name')->name('home');;
+Route::get('/name')->name('home');
 
 // Route with arguments
 Route::get('/name/{name}', function ($name) {
