@@ -30,8 +30,7 @@
     ],
     "require": {
         "php": "^7.2",
-        "ironphp/ironphp": "1.0.12-alpha1",
-        "phpunit/phpunit": "^8.5"
+        "ironphp/ironphp": "1.0.12-alpha1"
     },
 	"require-dev": {
     },
