@@ -31,9 +31,12 @@
     "require": {
         "php": "^7.3|^8.0",
         "ironphp/ironphp": "@dev",
-        "phpunit/phpunit": "^9.5"
+        "codeception/module-asserts": "^1.0.0"
     },
-	"require-dev": {
+    "require-dev": {
+        "codeception/module-webdriver": "dev-master",
+        "nunomaduro/larastan": "^0.7.7",
+        "phpunit/phpunit": "@dev"
     },
     "config": {
         "optimize-autoloader": true,
@@ -48,22 +51,21 @@
             "config/paths.php"
         ]
     },
-    "bin": ["jarvis"],
+    "bin": [
+        "jarvis"
+    ],
     "minimum-stability": "dev",
     "prefer-stable": false,
     "scripts": {
-		"pre-install-cmd": [
-			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-		],
+        "pre-install-cmd": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
-        "post-autoload-dump": [
-        ],
-        "post-install-dump": [
-        ],
-        "post-update-dump": [
-        ],
+        "post-autoload-dump": [],
+        "post-install-dump": [],
+        "post-update-dump": [],
         "post-create-project-cmd": [
             "@php jarvis key"
         ]
