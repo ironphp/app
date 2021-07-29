@@ -30,13 +30,12 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "ironphp/ironphp": "@dev",
-        "codeception/module-asserts": "^1.0.0"
+        "ironphp/ironphp": "@dev"
     },
     "require-dev": {
-        "codeception/module-webdriver": "dev-master",
-        "nunomaduro/larastan": "^0.7.7",
-        "phpunit/phpunit": "@dev"
+        "codeception/module-asserts": "@dev",
+        "codeception/module-webdriver": "@dev",
+        "nunomaduro/larastan": "^0.7"
     },
     "config": {
         "optimize-autoloader": true,
