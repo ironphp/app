@@ -3,7 +3,7 @@ version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
     docker: # run the steps with Docker 
-      - image: circleci/php:7.3-node-browsers # ...with this image as the primary container; this is where all `steps` will run
+      #- image: circleci/php:7.3-node-browsers # ...with this image as the primary container; this is where all `steps` will run
       - image: circleci/php:7.4-node-browsers
       - image: circleci/php:8.0-node-browsers
     working_directory: ~/repo # directory where steps will run
@@ -15,7 +15,7 @@ jobs: # a collection of steps
             #- composer-v1-{{ checksum "composer.lock" }}
             # fallback to using the latest cache if no exact match is found (See https://circleci.com/docs/2.0/caching/)
             #- composer-v1-
-      - run: php -v && composer install -n --prefer-dist && cp .env.example .env && php jarvis key && php jarvis && phpunit
+      - run: php -v && composer install -n --prefer-dist && php -r "copy('.env.example', '.env');" && php jarvis key && php jarvis
       - save_cache: # special step to save the dependency cache with the `composer.lock` cache key template
           key: composer-v1-{{ checksum "composer.lock" }}
           paths:
