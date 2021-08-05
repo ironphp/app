@@ -3,15 +3,6 @@
     <a href="https://packagist.org/packages/ironphp/app" target="_blank">
         <img alt="Total Downloads" src="https://poser.pugx.org/ironphp/app/d/total.svg">
     </a>
-    <a href="https://circleci.com/gh/ironphp/app" target="_blank">
-        <img alt="CircleCI Build status" src="https://circleci.com/gh/ironphp/app.svg?style=svg">
-    </a>
-    <a href="https://github.styleci.io/repos/159154661">
-        <img src="https://github.styleci.io/repos/159154661/shield?branch=master" alt="StyleCI">
-    </a>
-    <a href="https://ci.appveyor.com/project/gaurangkumar/app" target="_blank">
-        <img alt="AppVeyor Build status" src="https://ci.appveyor.com/api/projects/status/2dg847baixltt4p4?svg=true">
-    </a>
     <a href="https://packagist.org/packages/ironphp/app" target="_blank">
         <img alt="Latest Stable Version" src="https://poser.pugx.org/ironphp/app/v/stable.svg">
     </a>
@@ -20,6 +11,16 @@
     </a>
     <a href="http://php.net/" target="_blank">
         <img alt="Minimum PHP Version" src="https://img.shields.io/badge/php-%3E%3D%207.2-ee4499.svg?style=flat-plastic">
+    </a>
+    <br>
+    <a href="https://circleci.com/gh/ironphp/app" target="_blank">
+        <img alt="CircleCI Build status" src="https://circleci.com/gh/ironphp/app.svg?style=svg">
+    </a>
+    <a href="https://github.styleci.io/repos/159154661">
+        <img src="https://github.styleci.io/repos/159154661/shield?branch=master" alt="StyleCI">
+    </a>
+    <a href="https://ci.appveyor.com/project/gaurangkumar/app" target="_blank">
+        <img alt="AppVeyor Build status" src="https://ci.appveyor.com/api/projects/status/2dg847baixltt4p4?svg=true">
     </a>
 </p>
 
