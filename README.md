@@ -16,11 +16,21 @@
     <a href="https://circleci.com/gh/ironphp/app" target="_blank">
         <img alt="CircleCI Build status" src="https://circleci.com/gh/ironphp/app.svg?style=svg">
     </a>
+    <a href="https://ci.appveyor.com/project/gaurangkumar/app" target="_blank">
+        <img alt="AppVeyor Build status" src="https://ci.appveyor.com/api/projects/status/2dg847baixltt4p4?svg=true">
+    </a>
+    <a href="https://travis-ci.com/ironphp/app">
+        <img alt="TravisCI" src="https://travis-ci.com/ironphp/app.svg">
+    </a>
     <a href="https://github.styleci.io/repos/159154661">
         <img src="https://github.styleci.io/repos/159154661/shield?branch=master" alt="StyleCI">
     </a>
-    <a href="https://ci.appveyor.com/project/gaurangkumar/app" target="_blank">
-        <img alt="AppVeyor Build status" src="https://ci.appveyor.com/api/projects/status/2dg847baixltt4p4?svg=true">
+    <br>
+    <a href="http://isitmaintained.com/project/ironphp/app" title="Average time to resolve an issue" target="_blank">
+        <img alt="Average time to resolve an issue" src="http://isitmaintained.com/badge/resolution/ironphp/app.svg">
+    </a>
+    <a href="http://isitmaintained.com/project/ironphp/app" title="Percentage of issues still open">
+        <img alt="Percentage of issues still open" src="http://isitmaintained.com/badge/open/ironphp/app.svg">
     </a>
 </p>
 
