@@ -20,7 +20,7 @@
         <img alt="AppVeyor Build status" src="https://ci.appveyor.com/api/projects/status/2dg847baixltt4p4?svg=true">
     </a>
     <a href="https://travis-ci.com/ironphp/app">
-        <img alt="TravisCI" src="https://travis-ci.com/ironphp/app.svg">
+        <img alt="TravisCI" src="https://api.travis-ci.com/ironphp/app.svg?branch=master">
     </a>
     <a href="https://github.styleci.io/repos/159154661">
         <img src="https://github.styleci.io/repos/159154661/shield?branch=master" alt="StyleCI">
