@@ -41,7 +41,7 @@ uses Front Controller, and MVC.
 
 The Framework source code can be found here: [ironphp/ironphp](https://github.com/ironphp/ironphp).
 
-> **Note:** No stable release yet - [IronPHP Framework 1.0.12 alpha1](https://github.com/ironphp/ironphp/releases/tag/1.0.12-alpha1) version has been released.
+> **Note:** No stable release yet - [IronPHP Framework 1.0.13 alpha1](https://github.com/ironphp/ironphp/releases/tag/1.0.13-alpha1) version has been released.
 
 ## Table of Contents
 
@@ -66,7 +66,7 @@ You can install IronPHP as your project using
 a starting point. you can run the following:
 
 1. Download [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe) or download `composer.phar` file.
-2. Run `.
+2. Run `php composer.phar create-project --prefer-dist ironphp/app [dir_name]`.
 
 
 If Composer is installed locally, run
@@ -149,7 +149,7 @@ Read and edit `'Configuraton'` in `config/app.php` and setup the `'Datasource'` 
 
 ## About Us
 
-IronPHP development is led by the [GaurangKumar Parmar](https://twitter.com/gaurangkumarp).
+IronPHP development is led by the [GaurangKumar](https://instagram.com/gaurangkumar1).
 
 ## Get Support
 
@@ -169,7 +169,7 @@ For each report, we try to first confirm the vulnerability. Once confirmed, the 
 
 ## Authors
 
-- GaurangKumar Parmar  | [GitHub](https://github.com/gaurangkumar)  | [Twitter](https://twitter.com/gaurangkumarp) | [Patreon](https://www.patreon.com/gaurangkumar) | <gaurangkumarp@gmail.com>
+- GaurangKumar | [GitHub](https://github.com/gaurangkumar) | [Instagram](https://instagram.com/gaurangkumar1) | [Facebook](https://facebook.com/gaurangkumarp) | [Linkedin](https://www.linkedin.com/in/gaurangkumar/) | [Patreon](https://www.patreon.com/gaurangkumar) | <gaurangkumarp@gmail.com>
 
 [1]: https://github.com/ironphp
-[2]: https://www.facebook.com/IronPHP-Framwork-325690624644002
+[2]: https://www.facebook.com/IronPHP
